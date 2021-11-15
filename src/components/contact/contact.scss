@@ -1,0 +1,314 @@
+@import '../../global.scss';
+
+.contact{
+	background-color:$wColor;
+
+	@include mobile768{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	h1{
+		font-size:2rem;
+		text-align:center;
+		color:$darkColor;
+		margin-top:20px;
+		margin-bottom:30px;
+		
+		@include mobile1280{
+			margin-top:40px;
+		}
+		@include mobile1024{
+			margin-bottom:-20px;
+		}
+		@include mobile540{
+			font-size:1.7rem;
+			margin-bottom:10px;
+		}
+		/*@include mobile375{
+			font-size:1.5rem;
+			margin-bottom:10px;
+		}*/
+		@include mobile375{
+			font-size:1.25rem;
+			margin-bottom:0px;
+		}
+		@include mobile280{
+			font-size:1.25rem;
+			margin-bottom:10px;
+		}
+	}
+/****************************/	
+	.contactWrapper{
+		padding:50px;
+		display:flex;
+
+		@include mobile768{
+			flex-direction:column;
+			padding:0px 50px;
+			padding-top:30px;
+			height:70%;
+		}
+			
+		.left{
+			flex:1;
+			height:50%;
+			
+			@include mobile768{
+				.c-info{
+					margin-left:30%;
+				}
+			}
+			@include mobile540{
+				.c-info{
+					margin-left:18%;
+				}
+			}
+			@include mobile414{
+				.c-info{
+					margin-left:2%;
+				}
+			}
+			@include mobile375{
+				.c-info{
+					margin-left:0px;
+					margin-top:20px;
+				}
+			}
+			@include mobile320{
+				.c-info{
+					margin-left:0px;
+					margin-top:0px;
+				}
+			}
+			@include mobile280{
+				.c-info{
+					width:100%;
+					margin-left:0px;
+				}
+			}
+
+			.c-info-item {
+				display: flex;
+				align-items: center;
+				margin-top:2rem;
+				margin-bottom:20px;
+				font-weight: 300;
+				width: 70%;
+				color:$mainColor;
+				
+				@include mobile768{
+					margin:20px auto;
+					width:100%;
+					text-align:center;
+				}
+				@include mobile375{
+					margin:10px auto;
+					width:100%;
+					
+					span{
+						font-size:15px;
+					}
+				}
+				@include mobile320{
+					margin:10px auto;
+					width:100%;
+					
+					span{
+						font-size:13px;
+					}
+				}
+				@include mobile280{
+					margin:10px auto;
+					width:100%;
+					font-size:12px;
+
+					span{
+						font-size:10px;
+					}
+				}
+			}		
+		
+			.icon {
+				width: 30px;
+				height: 30px;
+				margin-right: 20px;
+				
+				@include mobile375{
+					width: 18px;
+					height: 18px;
+					margin-right:5px;
+				}
+				@include mobile320{
+					width: 14px;
+					height: 14px;
+					margin-right:5px;
+				}
+				@include mobile280{
+					width: 12px;
+					height: 12px;
+					margin-right:5px;
+				}
+			}
+		}
+		
+		/************************/
+		
+		.right{
+			height:100%;
+			flex:1;
+			display:flex;
+
+			@include mobile768{		
+				width:100%;
+				height:100vw;
+				margin-top:-10rem;
+				overflow:hidden;
+			}
+			@include mobile540{		
+				width:100%;
+				height:100%;
+				margin-top:-10rem;
+				overflow:hidden;
+			}
+			@include mobile320{
+				margin-left:-25px;
+			}
+			@include mobile280{
+				margin-left:-25px;
+			}
+			
+			form{
+				width:100%;
+				height:100%;
+				margin-top: 20px;		
+				color:$darkColor;
+				/*background-color:red;*/
+
+				@include mobile768{
+					margin-top:0px;
+					margin-left:20%;
+					/*background-color:green;*/
+				}
+				@include mobile540{
+					margin-top: 20px;	
+					width:100%;
+					height:100%;				
+					/*background-color:red;*/
+				}	
+				@include mobile320{
+					margin-top:0px;	
+					width:100%;
+					height:100%;			
+					overflow:hidden;
+				}	
+				@include mobile280{
+					margin-top:0px;	
+					width:100%;
+					height:100%;			
+				}	
+						
+				input{
+					width: 90%;
+					height: 50px;
+					border-radius:5px;
+					margin: 10px 0px;
+					font-size: 14px;
+					padding-left: 10px;
+				
+					@include mobile768{
+						width: 80%;
+						height: 35px;
+						border-radius:0px;
+						display:flex;
+						align-items:center;
+					}
+					@include mobile540{
+						width: 80%;
+						height: 25px;
+						border-radius:0px;
+						display:flex;
+						align-items:center;
+					}
+					@include mobile320{
+						width: 100%;
+						height: 23px;
+						font-size: 12px;
+					}
+					@include mobile280{
+						width: 100%;
+						height: 20px;
+						font-size: 12px;
+					}
+				}
+			
+				textarea{
+					width: 90%;
+					height:100px;
+					margin: 10px 0px;
+					font-size: 14px;
+					padding-left: 10px;
+					border-radius:5px;
+					border:2px solid black;
+				
+					@include mobile768{
+						width:80%;
+						height:30%;
+						border-radius:0px;
+						margin-bottom:2rem;
+					}
+					@include mobile540{
+						width:80%;
+						height:30%;
+						border-radius:0px;
+						margin-bottom:2rem;
+					}
+					@include mobile320{
+						width:100%;
+						font-size:12px;
+					}
+					@include mobile280{
+						width:100%;
+						font-size:12px;
+					}
+				}
+			
+				button{
+					width:90%;
+					border: none;
+					border-radius:5px;
+					padding: 15px;
+					background-color:$mainColor;
+					color: white;
+					font-weight: 500;
+					cursor: pointer;
+				
+					@include mobile768{
+						width:80%;
+						border-radius:0px;
+						margin-right:50px;
+					}
+					@include mobile540{
+						height:25px;
+						margin-top:-20px;
+						display:flex;
+						align-items:center;
+						justify-content:center;
+					}
+					@include mobile320{
+						width:100%;
+					}
+					@include mobile280{
+						width:100%;
+					}
+				
+					&:focus{
+						outline:none;
+					}
+				}
+			
+
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+/*$mainColor:#15023a;*/
+/*$mainColor:#5361FF;*/
+$mainColor:navy;
+$darkColor:#2A3B47;
+$textColor:#697477;
+$mainWColor:#FAFAFF;
+$wColor:#fff;
+$cColor:crimson;
+
+
+@mixin mobile1280{
+	@media (min-width:1280px){
+		@content
+	}
+}
+
+@mixin mobile1024{
+	@media (min-width:1024px){
+		@content
+	}
+}
+
+@mixin mobile1024max{
+	@media (max-width:1024px){
+		@content
+	}
+}
+
+@mixin mobile768{
+	@media (max-width:768px){
+		@content
+	}
+}
+
+@mixin mobile540{
+	@media (max-width:540px){
+		@content
+	}
+}
+
+@mixin mobile500{
+	@media (max-width:500px){
+		@content
+	}
+}
+
+@mixin mobile415{
+	@media (max-width:415px){
+		@content
+	}
+}
+
+@mixin mobile414{
+	@media (max-width:414px){
+		@content
+	}
+}
+
+@mixin mobile411{
+	@media (max-width:411px){
+		@content
+	}
+}
+
+@mixin mobile375{
+	@media (max-width:375px){
+		@content
+	}
+}
+
+@mixin mobile360{
+	@media (max-width:360px){
+		@content
+	}
+}
+
+
+@mixin mobile320{
+	@media (max-width:320px){
+		@content
+	}
+}
+
+@mixin mobile280{
+	@media (max-width:280px){
+		@content
+	}
+}
+
+
+/***************************/
+$width:768px;
+/*@mixin mobile768{
+	@media (max-width: #{$width}){
+		@content
+	}
+}*/
+/***************************/

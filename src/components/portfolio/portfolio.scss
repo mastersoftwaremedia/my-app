@@ -1,0 +1,143 @@
+@import '../../global.scss';
+
+.portfolio{
+	background-color:$wColor;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	h1{
+		font-size:2rem;
+		margin-top:2rem;
+		margin-bottom:1rem;
+		
+		@include mobile768{
+			margin-top:10px;
+			padding:20px;
+			font-size:20px;
+			overflow:hidden;
+			font-size:2rem;
+		}
+		@include mobile320{
+			margin-top:0px;
+			margin-bottom:.5rem;
+		}
+	}
+	
+	ul{
+		margin:2rem 10px;
+		padding:0;
+		list-style:none;
+		display:flex;
+		
+		@include mobile768{
+			flex-wrap:wrap;
+			justify-content:center;
+			margin:10px;
+			margin-bottom:20px;
+		}
+		@include mobile320{
+			padding:1.2rem;
+			overflow:hidden;
+			/*background-color:red;*/
+		}
+		@include mobile280{
+		
+		}		
+		
+	}
+	
+	.container{
+		width:80%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		flex-wrap:wrap;
+		
+		@include mobile768{
+			width:100%;
+		}
+		@include mobile320{
+		
+		}
+		@include mobile280{
+		
+		}		
+		
+		
+		.item{
+			width:220px;
+			height:150px;
+			border-radius:2px;
+			border:1px solid rgb(240, 239, 239);
+			margin:10px 20px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			color:$wColor;
+			position:relative;
+			transition:all .5s ease;
+			cursor:pointer;	
+			text-decoration:none;
+			box-shadow:0 5px 15px rgba(0,0,0,0.5);
+			transition:all 1s ease;
+				
+			&:hover{
+				transform:scale(1.1);
+			}
+
+			
+			@include mobile768{
+				margin-top:25px;
+				margin-bottom:25px;
+				width:130px;
+				height:100px;
+			}
+			@include mobile320{
+				margin-top:5px;
+				margin-bottom:10px;
+				width:110px;
+				height:80px;		
+			}		
+			@include mobile280{
+		
+			}
+			
+
+			h3{
+				position:absolute;
+				font-size:20px;
+				
+				@include mobile320{
+					font-size:18px;
+				}			
+				@include mobile280{
+			
+				}				
+			}
+			
+			img{
+				width:100%;
+				height:100%;
+				object-fit:cover;
+				z-index:1;
+
+				@include mobile320{
+		
+				}	
+				@include mobile280{
+		
+				}
+			}
+			
+			&:hover{
+				background-color:$mainColor;
+				img{
+					opacity:0.2;
+					z-index:0;
+				}
+			}			
+			
+		}
+	}
+}

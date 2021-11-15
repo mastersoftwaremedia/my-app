@@ -1,0 +1,307 @@
+@import '../../global.scss';
+
+.intro{
+	background-color:$wColor;
+	display:flex;
+	align-items:center;
+	margin-left:auto;
+	margin-right:auto;
+	
+	@include mobile768{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.left{
+		flex:.5;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:hidden;
+
+	
+		@include mobile768{
+			margin-top:20px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		@include mobile280{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+
+		.imgContainer{
+			width:500px;
+			height:500px;
+			background-color:crimson;
+			border-radius:50%;
+			display:flex;
+			align-items:center;
+			float:right;
+			
+			@include mobile1024{
+				width:450px;
+				height:450px;
+				border-radius:50%;
+				align-items:center;
+				float:right;
+			}
+			@include mobile768{
+				width:380px;
+				height:380px;
+				border-radius:50%;
+				align-items:center;
+				justify-content:center;
+			}
+			@include mobile540{
+				width:300px;
+				height:300px;
+				border-radius:50%;
+				align-items:flex-start;
+				float:none;
+			}
+			@include mobile375{
+				width:280px;
+				height:280px;
+			}
+			@include mobile360{
+				width:245px;
+				height:245px;
+			}
+			@include mobile320{
+				width:235px;
+				height:235px;
+			}
+			@include mobile280{
+				width:225px;
+				height:225px;
+			}
+			
+			
+			.h1Title{
+				width:100%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				font-size: 6rem;
+				color: $wColor;
+				line-height: .8;
+				
+				@include mobile768{
+					width:100%;
+					height:100%;
+					font-size:3.8rem;
+					margin-left:auto;
+					margin-right:auto;
+				}
+				@include mobile540{
+					font-size:3rem;
+				}
+				@include mobile360{
+					font-size: 2.8rem;	
+				}
+				@include mobile320{
+					font-size: 2.5rem;	
+				}
+				@include mobile280{
+					font-size: 2.5rem;			
+					margin-left:auto;
+					margin-right:auto;
+					justify-content:center;
+				}
+				
+				span{
+					font-size: 7.5rem;
+					text-shadow: 0 20px 25px rgba(0,0,0,.5);
+					overflow:hidden;
+			
+					@include mobile768{
+						font-size: 5.5rem;
+						padding-right:10px;
+					}
+					@include mobile540{
+						font-size:4.2rem;
+					}
+					@include mobile411{
+						font-size:4rem;
+					}
+					@include mobile375{
+						font-size: 4rem;
+					}
+					@include mobile360{
+						font-size: 3.4rem;	
+					}
+					@include mobile320{
+						font-size: 3.2rem;	
+					}
+					@include mobile280{
+						font-size: 3rem;			
+					}
+				}				
+			}
+
+			
+		}
+	}
+	/****************************************/
+	
+	.right{
+		width:70%;
+		height:70%;
+		padding-right:50px;
+		flex:.5;
+		position:relative;
+	
+		display:flex;
+		flex-direction:column;
+		overflow:hidden;
+		
+		
+		@include mobile768{
+			width:80%;
+			padding:0px;
+			/*background-color:red;*/
+			display:flex;
+			flex-direction:column;
+			overflow:hidden;
+		}
+		@include mobile280{
+			width:90%;
+			padding:0px;
+			margin-top:-20px;
+			/*background-color:red;*/
+		}
+		
+		.wrapper{
+			width:100%;
+			height:100%;
+			padding-left:50px;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			
+			@include mobile768{
+				padding-left:0;
+				align-items:center;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:-30px;
+			}
+			@include mobile320{
+				margin-top:-20px;
+			}
+			
+			h1{
+				font-size:60px;
+				margin:10px 0;
+				color:$darkColor;
+				
+				@include mobile768{
+					font-size:38px;
+					margin-left:40%;
+				}
+				@include mobile414{
+					font-size:32px;
+				}
+				@include mobile375{
+					font-size:32px;
+				}
+				@include mobile320{
+					font-size:25px;
+				}
+				@include mobile280{
+					font-size:23px;
+					margin-left:30%;				
+				}
+			
+			}
+			
+			h2{
+				font-size:35px;
+				color:$textColor;
+				
+				@include mobile768{
+					font-size:34px;
+					margin-left:auto;
+					margin-right:auto;
+					flex-wrap:wrap;
+					margin-bottom:20px;
+				}				
+				@include mobile540{
+					font-size:30px;
+				}
+				@include mobile414{
+					font-size:26px;
+				}
+				@include mobile375{
+					font-size:26px;
+				}
+				@include mobile320{
+					font-size:21px;
+				}
+				@include mobile280{
+					font-size:21px;
+				}
+			}
+			
+			/****************/
+			h3{
+				font-size:30px;
+				
+				@include mobile768{
+					font-size:25px;
+					margin-left:40%;
+				}
+				@include mobile414{
+					font-size:20px;
+				}
+				@include mobile375{
+					font-size:20px;
+				}
+				@include mobile320{
+					font-size:18px;
+				}
+				@include mobile280{
+					font-size:18px;
+					margin-left:35%;
+				}
+				
+				span{
+					font-size:inherit;
+					color:$cColor;
+				}
+				
+				.ityped-cursor{
+					animation:blink 1s infinite;
+				}
+				
+				@keyframes blink{
+					50%{
+						opacity:1;
+					}
+					100%{
+						opacity:0;	
+					}
+				}
+			}
+		}
+		
+		a{
+			position:absolute;
+			bottom:10px;
+			left:40%;
+			font-weight:800;
+
+			img{
+				width:30px;
+				animation:arrowBlink 2s infinite;
+			}
+	
+			@keyframes arrowBlink{
+				100%{opacity:0;}
+			}
+		}
+	}
+}

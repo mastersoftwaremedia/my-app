@@ -1,0 +1,158 @@
+@import '../../global.scss';
+
+.portfolioDone{
+	background-color:$wColor;
+
+	h1{
+		text-align:center;
+		font-size:2rem;
+		margin-top:10px;
+		margin-bottom:-10px;
+		
+		@include mobile768{
+			font-size:20px;
+		}
+		@include mobile280{
+			font-size:1.25rem;
+		}
+	}
+	
+	.btn{
+		text-align:center;
+		margin:0;
+	}
+	
+	.box{
+		padding:20px;
+		border-radius:5px;
+		display:flex;
+		width:90%;
+		margin:20px auto;
+		flex-direction:column;
+		
+		@include mobile1280{
+			margin-top:0px;
+		}
+		
+		.imgBxContainer{
+			background-color:$wColor;
+			color:$darkColor;
+			font-weight:600;
+			width:100%;
+			overflow:hidden;
+			margin-top:3%;
+			padding:8px 10px;
+			box-shadow:0 5px 15px rgba(0,0,0,0.5);
+
+			@include mobile1280{
+				width:70%;
+				height:70%;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			@include mobile280{
+				width:105%;
+				height:105%;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			
+			p{
+				padding:10px;
+				font-size:1rem;
+			}
+
+			img{
+				margin:15px;
+				flex:.4;
+				width:100%;
+				height:100%;
+				object-fit:cover;
+				border:1px solid $darkColor;
+				box-shadow:0 5px 15px rgba(0,0,0,0.5);
+				transition:all 1s ease;
+				
+				&:hover{
+					transform:scale(1.1);
+				}
+			}
+		}
+
+		
+		.content{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			margin-top:3%;
+			padding:8px 10px;
+			box-shadow:0 5px 15px rgba(0,0,0,0.5);
+			color:$darkColor;
+			
+			@include mobile1280{
+				margin-top:10px;
+				margin-left:auto;
+				margin-right:auto;
+				width:70%;
+			}
+			@include mobile540{
+				padding:3px 10px;
+				font-size:14px;
+			}
+			@include mobile280{
+				padding:3px 10px;
+				font-size:12px;
+				margin-left:5px;
+			}
+			
+			a{
+				text-decoration:none;
+				color:$darkColor;
+				font-weight:500;
+							
+				&:hover{
+					font-weight:600;
+					text-decoration:underline;
+					color:$cColor;				
+				}
+			}
+
+			.icon{
+				margin-right:10px;
+				color:$mainColor;
+			}
+			.iconRight{
+				margin-left:10px;
+				color:$mainColor;
+			}
+			
+			ul{
+				padding:0;
+				width:100%;
+				/*background-color:blue;*/
+				display:flex;
+				align-items:center;
+				justify-content:flex-start;
+				
+				.box{
+					width:50%;
+					margin:0;
+					padding:0;
+					padding-right:5px;
+					
+					li{
+						margin:5px 0;
+						font-size:14px;
+						font-weight:600;
+						
+						.liIcon{
+							width:12px;
+							height:12px;
+							color:$mainColor;
+							margin-right:10px;
+						}	
+					}
+				}
+			}
+		}
+	}
+}
